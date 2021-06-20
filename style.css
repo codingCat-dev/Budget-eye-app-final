@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media screen and (max-width: 50em) {
+    html {
+      font-size: 58%; } }
+  @media screen and (max-width: 40.625em) {
+    html {
+      font-size: 55%; } }
+  @media screen and (max-width: 21.875em) {
+    html {
+      font-size: 50%; } }
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "Viaoda Libre", cursive;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 2rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #229d76; }
+
+.content-detail {
+  width: 85%;
+  margin: 3% auto;
+  border: 1px solid #229d76;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
+  @media screen and (max-width: 50em) {
+    .content-detail {
+      width: 98%; } }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn {
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  color: #f1f7ed;
+  background-color: #b33051;
+  margin: 1rem;
+  font-family: "Viaoda Libre", cursive;
+  text-transform: uppercase;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease; }
+  .btn:hover {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-5%); }
+
+.navigation {
+  padding: 1rem 3rem;
+  justify-content: space-around;
+  font-size: 2.2rem;
+  font-family: "Viaoda Libre", cursive;
+  color: #333;
+  overflow: hidden;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase; }
+  @media screen and (max-width: 40.625em) {
+    .navigation {
+      justify-content: center;
+      flex-direction: column;
+      padding: 1rem; } }
+  .navigation-logo {
+    width: 6rem;
+    height: 6rem; }
+  .navigation-balance {
+    background-color: #229d76;
+    color: #f1f7ed;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.2rem; }
+
+.income-expense-container {
+  justify-content: space-around; }
+
+.money {
+  font-size: 2.2rem;
+  font-family: "Viaoda Libre", cursive;
+  font-weight: 600; }
+  .money-income {
+    color: #229d76; }
+  .money-expense {
+    color: #b33051; }
+
+.list {
+  list-style: none;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Roboto Slab", serif; }
+  .list li {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    border-radius: 1rem;
+    border: 0.1rem solid #229d76;
+    padding: 0.5rem;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
+    .list li span {
+      width: 100%; }
+    @media screen and (max-width: 40.625em) {
+      .list li {
+        flex-basis: 100%; } }
+
+.expense-input {
+  text-align: center;
+  flex-direction: column; }
+
+.form {
+  flex-direction: column;
+  margin: 1rem; }
+
+.form-section {
+  text-align: center;
+  backface-visibility: hidden; }
+  .form-section label {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "Viaoda Libre", cursive;
+    font-weight: 600;
+    margin: 0.5rem; }
+  .form-section input,
+  .form-section input:active,
+  .form-section input:focus {
+    margin: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border: 0.1rem solid #229d76;
+    border-color: #229d76;
+    border-radius: 1rem;
+    text-align: inherit;
+    font-family: "Roboto Slab", serif; }
+
+.delete-btn {
+  padding: 0.5rem;
+  width: 3rem; }
+
+.transaction-button {
+  padding: 1rem; }
+
+.footer {
+  color: #229d76;
+  font-family: "Viaoda Libre", cursive; }
+  .footer-item {
+    justify-content: space-evenly; }
+    .footer-item span {
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: capitalize; }
+
+.expense-error {
+  font-size: 1.8rem;
+  font-family: "Roboto Slab", serif;
+  text-transform: capitalize;
+  color: #b33051;
+  font-weight: 500; }
+
+.minus {
+  color: #b33051; }
+
+.plus {
+  color: #229d76; }

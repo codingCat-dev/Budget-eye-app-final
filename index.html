@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Budget Eye</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navigation flex content-detail">
+      <div>
+        <img
+          src="img/budgeteye.png"
+          alt="application logo owl with golden eye"
+          class="navigation-logo"
+        />
+      </div>
+      <div>
+        <h3 class="navigation-name">Budget Eye</h3>
+      </div>
+      <div>
+        <h3 class="navigation-balance">
+          Balance &#58; <span class="balance"></span>
+        </h3>
+      </div>
+    </nav>
+    <!-- Income-expense container -->
+    <div class="income-expense-container flex content-detail">
+      <div>
+        <h3>Income</h3>
+        <!-- Income Money -->
+        <span class="money money-income"></span>
+      </div>
+      <div>
+        <!-- Expense Money -->
+        <h3>Expense</h3>
+        <span class="money money-expense"></span>
+      </div>
+    </div>
+    <!-- Expense History -->
+    <div class="content-detail">
+      <h3>History</h3>
+
+      <div class="expense-list">
+        <ul class="list flex">
+          <!-- <li>
+            <span class="minus">value</span>
+          </li>
+          <li>
+            <span class="plus">value</span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- Expense List -->
+
+    <div class="expense-input flex content-detail">
+      <h3>Add Action</h3>
+      <span class="expense-error"></span>
+
+      <form action="/" class="form flex">
+        <div class="form-section">
+          <label for="text">Name</label>
+          <input id="text" type="text" />
+        </div>
+        <div class="form-section">
+          <label for="amount"
+            >Amount <br />
+            positive - income
+            <br />
+            negative - expense
+          </label>
+          <input id="amount" type="number" />
+        </div>
+        <button class="btn transaction-button">Add Action</button>
+      </form>
+    </div>
+    <div class="footer">
+      <ul class="footer-item flex">
+        <li>
+          <a
+            href="https://github.com/codingCat-dev"
+            target="_blank"
+            class="footer-link"
+            ><i class="fab fa-github-square fa-2x"></i
+          ></a>
+        </li>
+
+        <li>
+          <a
+            href="https://discord.gg/jV8DtW6Xzx"
+            target="_blank"
+            class="footer-link"
+            ><i class="fab fa-discord fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <span>&#169; coding-cat 2021</span>
+        </li>
+      </ul>
+    </div>
+    <!--START-->
+    <script src="script.js"></script>
+  </body>
+</html>
